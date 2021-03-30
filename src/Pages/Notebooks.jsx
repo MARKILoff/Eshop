@@ -42,16 +42,17 @@ const Notebooks = props => {
             <hr/>
             <div className="grid mt-2 grid-cols-6 gap-4">
                 {brand.currentBrand !== ""
-                    ? props.product.map((product, index) =>
-                    brand.currentBrand === product.branName ? (
+                    ? props.products.map((product, index) =>
+                    brand.currentBrand === product.brandName ? (
                         <div className="text-red-500" key={index}>
                             <RecipeRviewCard
-                            productIsLoaded={props.productIsLoaded}
+                            productsIsLoaded={props.productsIsLoaded}
                             data={product}
                             />
                         </div>
                     ) : null
-                ) : null}
+                    )
+                : null}
             </div>
         </>
     );

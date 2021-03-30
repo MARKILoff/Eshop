@@ -9,7 +9,7 @@ const Phones = props => {
         <>
             <div className="mt-5 w-full h-full flex justify-around">
                 {props.categories.map(category =>
-                    category.category_id === 1 ? (
+                    category.catalog_id === 1 ? (
                         <div
                             className="text-gray-500 text-2xl"
                             key={category.id}
@@ -36,11 +36,11 @@ const Phones = props => {
             <hr/>
             <div className="grid mt-2 grid-cols-6 gap-4">
                 {brand.currentBrand !== ""
-                    ? props.product.map((product, index) =>
-                    brand.currentBrand === product.branName ? (
+                    ? props.products.map((product, index) =>
+                    brand.currentBrand === product.brandName ? (
                         <div className="text-red-500" key={index}>
                             <RecipeRviewCard
-                            productIsLoaded={props.productIsLoaded}
+                            productsIsLoaded={props.productsIsLoaded}
                             data={product}
                             />
                         </div>
