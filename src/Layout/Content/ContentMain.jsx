@@ -27,15 +27,30 @@ const ContentMain = (props) => {
                 </Route>
                 <Route path="/phones">
                     <Content />
-                    <Phones brands={props.data.brands} product={props.data.product} categories={props.data.categories} />
+                    <Phones
+                        brands={props.data.brands}
+                        product={props.data.product}
+                        categories={props.data.categories}
+                        productsIsLoaded={props.productsIsLoaded}
+                    />
                 </Route>
                 <Route path="/notebooks">
                     <Content />
-                    <Notebooks />
+                    <Notebooks
+                        brands={props.data.brands}
+                        product={props.data.product}
+                        categories={props.data.categories}
+                        productsIsLoaded={props.productsIsLoaded}
+                    />
                 </Route>
                 <Route path="/tv">
                     <Content />
-                    <Tv />
+                    <Tv
+                        brands={props.data.brands}
+                        product={props.data.product}
+                        categories={props.data.categories}
+                        productsIsLoaded={props.productsIsLoaded}
+                    />
                 </Route>
                 <Route path="/appliances">
                     <Content />

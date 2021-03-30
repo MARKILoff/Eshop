@@ -12,11 +12,11 @@ const FooterEnd = () => {
         <div className="grid grid-cols-3 p-5">
             <div></div>
             <div className="flex justify-between">
-            <FacebookIcon className="text-blue-900 cursor-pointer" />
-            <TwitterIcon className="text-blue-600 cursor-pointer" />
-            <PinterestIcon className="text-green-900 cursor-pointer" />
-            <YouTubeIcon className="text-red-700 cursor-pointer" />
-            <InstagramIcon className="text-pink-500 cursor-pointer" />
+            <a href="https://facebookIcon.com" target="_blank"><FacebookIcon className="text-blue-900 cursor-pointer" /></a> 
+            <a href="https://twitterIcon.com" target="_blank"><TwitterIcon className="text-blue-600 cursor-pointer" /></a> 
+            <a href="https://pinterestIcon.com"><PinterestIcon className="text-green-900 cursor-pointer" /></a> 
+            <a href="https://youTubeIcon"><YouTubeIcon className="text-red-700 cursor-pointer" /></a> 
+            <a href="https://InstagramIcon"><InstagramIcon className="text-pink-500 cursor-pointer" /></a> 
             </div>
             <div></div>
         </div>
