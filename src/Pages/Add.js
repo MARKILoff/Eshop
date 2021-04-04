@@ -15,8 +15,10 @@ const Add = (props) => {
                     <Modal
                         openBtn="Add Product"
                         modalHeaderTitle="HEADER TITLE"
+                        Main="Добавление различных товаров на сайт"
                         component={
                             <AddProduct
+                                
                                 createProduct={props.createProduct}
                                 categories={props.categories}
                                 brands={props.brands}
@@ -28,6 +30,7 @@ const Add = (props) => {
                     <Modal
                         openBtn="Add Brand"
                         modalHeaderTitle="Добавить Бренд"
+                        Main="Добавление на сайт разных брендов"
                         component={
                             <AddBrand
                                 createBrand={props.createBrand}
@@ -40,6 +43,7 @@ const Add = (props) => {
                     <Modal
                         openBtn="Add Catalog"
                         modalHeaderTitle="Добавить Каталог"
+                        Main="Добавляйте на сайт различные каталоги"
                         component={
                             <AddCatalog
                                 createCatalogs={props.createCatalogs}
@@ -52,6 +56,7 @@ const Add = (props) => {
                     <Modal
                         openBtn="Add Category"
                         modalHeaderTitle="Добавить Категоре"
+                        Main="Добавляйте на сайт разные категории"
                         component={
                             <AddCategory
                                 createCategory={props.createCategory}
